@@ -4,7 +4,7 @@
   "description": "React Server-Side + NodeJS + Express",
   "main": "app.js",
   "scripts": {
-    "start": "NODE_PATH=./ node app.js",
+    "start": "NODE_PATH=./ nodemon app.js",
     "test": "NODE_PATH=./ mocha './{,!(node_modules)/**/}*.spec.js'",
     "eslint": "./node_modules/.bin/eslint ./"
   },
@@ -13,13 +13,16 @@
   "dependencies": {
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
-    "helmet": "^3.8.1"
+    "helmet": "^3.8.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
   },
   "devDependencies": {
     "chai": "^4.1.1",
     "chai-http": "^3.0.0",
     "eslint": "^4.4.1",
     "eslint-plugin-react": "^7.1.0",
-    "mocha": "^3.5.0"
+    "mocha": "^3.5.0",
+    "nodemon": "^1.11.0"
   }
 }
